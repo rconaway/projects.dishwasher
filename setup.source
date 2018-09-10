@@ -1,0 +1,4 @@
+export WS=~/projects/dishwasher
+alias setup="source $WS/setup.source"
+alias pin_change="cd ~/etc/nRF5_SDK/examples/peripheral/pin_change_int/pca10056/blank/armgcc"
+
