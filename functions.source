@@ -1,0 +1,64 @@
+
+# Find an example project
+# If called with one parameter:
+#     $1 = name of project (e.g.) 
+function findx {
+	
+if [ $# -eq 1 ]; then
+    root="$SDK/examples"
+    pattern=$1
+
+elif [ $# -eq 2 ]; then
+    root=$(find $SDK/examples -name "$1")
+    if [ "$root" == "" ]; then
+        >&2 echo "no example groups match the pattern $1"
+        return 1
+    fi
+    pattern=$2
+   
+else
+    >&2 echo "usage:"
+    >&2 echo "    findx project"
+    >&2 echo "    findx group project"
+    return 1
+fi
+
+project=$(find $root -name "$pattern")
+if [ "$project" == "" ]; then
+    >&2 echo "no example projects match that pattern"
+    return 1
+fi
+
+if  [ ! -d "$project" ]; then
+    >&2 echo "more than one example project matched that pattern"
+    (>&2 echo $project | tr " " "\n")
+    return 1
+fi
+
+pushd $project >/dev/null
+ 
+while [ "$(find . -depth 1 -name  "*.emProject")" == "" ]; do
+    cd pca10056 2>/dev/null
+    cd blank 2>/dev/null
+    cd ses 2>/dev/null
+    cd s140 2>/dev/null
+    cd uart 2>/dev/null
+done
+
+cd .. 2>/dev/null
+pwd
+popd >/dev/null 
+
+return 0
+
+}
+
+function gox {
+
+    local d=$(findx $*)
+    if [ $? -eq 0 ]; then
+        cd $d/armgcc
+    fi
+}
+
+
