@@ -6,5 +6,6 @@ alias ws="cd $WS"
 alias setup="source $WS/setup.source"
 alias pin_change="cd ~/etc/nRF5_SDK/examples/peripheral/pin_change_int/pca10056/blank/armgcc"
 alias flash="nrfjprog -f NRF52 --chiperase --program _build/nrf52840_xxaa.hex --reset"
+alias config_wizard="java -jar ~/bin/CMSIS_Configuration_Wizard.jar"
 
 source $WS/functions.source
