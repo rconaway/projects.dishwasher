@@ -1,18 +1,41 @@
 from enum import Enum
 from typing import List
 import re
+from typing import NamedTuple
 
-class ConfigTag(Enum):
-    BLOCK_COMMENT = "Block Comment"
-    HEADER_GUARD_BEGIN = "Header Guard"
-    HEADER_GUARD_END = "Header Guard End"
-    CONFIG_SECTION_BEGIN = "Config Section Begin"
-    CONFIG_SECTION_END = "Config Section End"
-    APP_CONFIG = "App Config"
-    STRUCTURE_BEGIN = "Structure Begin"
-    STRUCTURE_END = "Structure End"
-    NAMED_VALUE = "Named Value"
-    MACRO_DEFINITION = "Macro Definition"
+class BlockComment(NamedTuple):
+    text: List[str]
+
+class HeaderGuardBegin(NamedTuple):
+    macro: str
+
+class HeaderGuardEnd(NamedTuple):
+    pass
+
+class ConfigSectionBegin(NamedTuple):
+    pass
+
+class ConfigSectionEnd(NamedTuple):
+    pass
+
+class AppConfig(NamedTuple):
+    pass
+
+class StructureBegin(NamedTuple):
+    tag: str
+    name: str
+    comment: str
+
+class StructureEnd(NamedTuple):
+    tag: str
+
+class NamedValue(NamedTuple):
+    name: str
+    value: str
+
+class MacroDefinition(NamedTuple):
+    name: str
+    value: str
 
 def parse(text: List[str]):
 
@@ -20,6 +43,8 @@ def parse(text: List[str]):
     while (text):
         parsed = \
             _parse_block_comment(text) or \
+            _parse_blank_line(text) or \
+            _parse_separator_line(text) or \
             _parse_header_guard(text) or \
             _parse_configuration_begin(text) or \
             _parse_configuration_end(text) or \
@@ -27,8 +52,6 @@ def parse(text: List[str]):
             _parse_structure_begin(text) or \
             _parse_structure_end(text) or \
             _parse_named_value(text) or \
-            _parse_blank_line(text) or \
-            _parse_separator_line(text) or \
             _parse_macro_definition(text) or \
             _parse_header_guard_end(text)
 
@@ -47,10 +70,10 @@ def _parse_block_comment(text: List[str]):
     if text[0] != "/**":
         return None
 
-    end = text.index(" */")
+    end = next((i for i, x in enumerate(text) if x.strip() == "*/"))
 
     return (
-        (ConfigTag.BLOCK_COMMENT, text[1:end]),
+        BlockComment(text[1:end]),
         text[end+1:]
     )
 
@@ -62,22 +85,22 @@ def _parse_header_guard(text: List[str]):
     if (not m):
         return None
 
-    label = m.group(1)
+    macro = m.group(1)
 
     m = define_pattern.match(text[1])
     if (not m):
         return None
 
-    if (label != m.group(1)):
-        raise RuntimeError(f"labels do not match: {label}, {m.group(1)}")
+    if (macro != m.group(1)):
+        raise RuntimeError(f"labels do not match: {macro}, {m.group(1)}")
 
-    return (ConfigTag.HEADER_GUARD_BEGIN, label), text[2:]
+    return HeaderGuardBegin(macro), text[2:]
 
 def _parse_configuration_begin(text: List[str]):
     p = re.compile("\\s*//\\s+<<< Use Configuration Wizard in Context Menu >>>")
     m = p.match(text[0])
     if (m):
-        return (ConfigTag.CONFIG_SECTION_BEGIN,), text[1:]
+        return ConfigSectionBegin(), text[1:]
     else:
         return None
 
@@ -85,7 +108,7 @@ def _parse_configuration_end(text: List[str]):
     p = re.compile("\\s*//\\s+<<< end of configuration section >>>")
     m = p.match(text[0])
     if (m):
-        return (ConfigTag.CONFIG_SECTION_END,), text[1:]
+        return ConfigSectionEnd(), text[1:]
     else:
         return None
 
@@ -96,7 +119,7 @@ def _parse_app_config(text: List[str]):
         "#endif"
         ]
     if (text[0:3] == expected):
-        return ((ConfigTag.APP_CONFIG,), text[3:])
+        return AppConfig, text[3:]
     else:
         return None
 
@@ -104,7 +127,7 @@ def _parse_structure_begin(text: List[str]):
     p = re.compile("\\s*//\\s+<([heoiqs])>\\s+(\\S+)\\s*(.*)$")
     m = p.match(text[0])
     if (m):
-        return (ConfigTag.STRUCTURE_BEGIN, m.group(1), m.group(2), m.group(3)), text[1:]
+        return StructureBegin(m.group(1), m.group(2), m.group(3)), text[1:]
     else:
         return None
 
@@ -112,7 +135,7 @@ def _parse_structure_end(text: List[str]):
     p = re.compile("\\s*//\\s+</([he])>\\s*$")
     m = p.match(text[0])
     if (m):
-        return (ConfigTag.STRUCTURE_END, m.group(1)), text[1:]
+        return StructureEnd(m.group(1)), text[1:]
     else:
         return None
 
@@ -121,7 +144,7 @@ def _parse_named_value(text: List[str]):
     p = re.compile("\\s*//\\s+<(\\S+)=>\\s+(.+)\\s*$")
     m = p.match(text[0])
     if (m):
-        return (ConfigTag.NAMED_VALUE, m.group(2), m.group(1)), text[1:]
+        return NamedValue(m.group(2), m.group(1)), text[1:]
     else:
         return None
 
@@ -158,13 +181,13 @@ def _parse_macro_definition(text: List[str]):
     if text[2] != "#endif":
         return None
 
-    return (ConfigTag.MACRO_DEFINITION, name, value), text[3:]
+    return MacroDefinition(name, value), text[3:]
 
 def _parse_header_guard_end(text: List[str]):
     p = re.compile("#endif\\s+")
     m = p.match(text[0])
 
     if (m):
-        return (ConfigTag.HEADER_GUARD_END,), text[1:]
+        return HeaderGuardEnd(), text[1:]
     else:
         return None
