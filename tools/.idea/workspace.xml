@@ -26,14 +26,14 @@
     <SUITE FILE_PATH="coverage/tools$Doctest__parse_element_header.coverage" NAME="Doctest _parse_element_header Coverage Results" MODIFIED="1537053305109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
     <SUITE FILE_PATH="coverage/tools$Doctest_skip_blanks.coverage" NAME="Doctest skip_blanks Coverage Results" MODIFIED="1537030949068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
     <SUITE FILE_PATH="coverage/tools$Doctest__parse_bit_element.coverage" NAME="Doctest _parse_bit_element Coverage Results" MODIFIED="1537055404996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
-    <SUITE FILE_PATH="coverage/tools$Doctests_in_string_element.coverage" NAME="Doctests in string_element Coverage Results" MODIFIED="1537068832035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
+    <SUITE FILE_PATH="coverage/tools$Doctests_in_string_element.coverage" NAME="Doctests in string_element Coverage Results" MODIFIED="1537075470672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
     <SUITE FILE_PATH="coverage/tools$Unittests_in_TestStringMethods_py.coverage" NAME="Unittests for project_merger.test.spike.TestStringMethods Coverage Results" MODIFIED="1536825503296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/test/spike" />
     <SUITE FILE_PATH="coverage/tools$Doctest_SimpleElement_parse.coverage" NAME="Doctest SimpleElement.parse Coverage Results" MODIFIED="1537027083488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
     <SUITE FILE_PATH="coverage/tools$Doctest_parse_simple_element.coverage" NAME="Doctest parse_simple_element Coverage Results" MODIFIED="1537041493348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
     <SUITE FILE_PATH="coverage/tools$Unittests_for_config_compiler_test_config_compiler_test_test_compiles_block_comment_and_body.coverage" NAME="Unittests for config_compiler_test.config_compiler_test.test_compiles_block_comment_and_body Coverage Results" MODIFIED="1536955494847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
     <SUITE FILE_PATH="coverage/tools$Doctest_parse__1_.coverage" NAME="Doctest parse (1) Coverage Results" MODIFIED="1537072625459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
     <SUITE FILE_PATH="coverage/tools$Doctest__parse_header_comment.coverage" NAME="Doctest _parse_header_comment Coverage Results" MODIFIED="1537051857979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
-    <SUITE FILE_PATH="coverage/tools$Doctests_in_bit_element.coverage" NAME="Doctests in bit_element Coverage Results" MODIFIED="1537073368707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
+    <SUITE FILE_PATH="coverage/tools$Doctests_in_bit_element.coverage" NAME="Doctests in bit_element Coverage Results" MODIFIED="1537075460909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
     <SUITE FILE_PATH="coverage/tools$header_element.coverage" NAME="header_element Coverage Results" MODIFIED="1537068810801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
     <SUITE FILE_PATH="coverage/tools$Doctest_BitElement_parse.coverage" NAME="Doctest BitElement.parse Coverage Results" MODIFIED="1537068883098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
     <SUITE FILE_PATH="coverage/tools$Doctests_in_config_compiler.coverage" NAME="Doctests in config_compiler Coverage Results" MODIFIED="1536985149016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
@@ -48,13 +48,13 @@
     <SUITE FILE_PATH="coverage/tools$enable_element.coverage" NAME="enable_element Coverage Results" MODIFIED="1537068808144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
     <SUITE FILE_PATH="coverage/tools$Doctest__parse_blanks.coverage" NAME="Doctest _parse_blanks Coverage Results" MODIFIED="1537052459882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
     <SUITE FILE_PATH="coverage/tools$tree_test.coverage" NAME="tree_test Coverage Results" MODIFIED="1536960244422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
-    <SUITE FILE_PATH="coverage/tools$Doctests_in_common.coverage" NAME="Doctests in common Coverage Results" MODIFIED="1537068756565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
+    <SUITE FILE_PATH="coverage/tools$Doctests_in_common.coverage" NAME="Doctests in common Coverage Results" MODIFIED="1537075465433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
     <SUITE FILE_PATH="coverage/tools$Doctest__parse_suffix.coverage" NAME="Doctest _parse_suffix Coverage Results" MODIFIED="1537052114197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
     <SUITE FILE_PATH="coverage/tools$Doctest_StringElement_parse.coverage" NAME="Doctest StringElement.parse Coverage Results" MODIFIED="1537068848223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
     <SUITE FILE_PATH="coverage/tools$Doctests_in_option_element.coverage" NAME="Doctests in option_element Coverage Results" MODIFIED="1537068871730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
     <SUITE FILE_PATH="coverage/tools$Doctest_parse_prefix.coverage" NAME="Doctest parse_prefix Coverage Results" MODIFIED="1537068401091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
     <SUITE FILE_PATH="coverage/tools$Doctest_parse__3_.coverage" NAME="Doctest parse (3) Coverage Results" MODIFIED="1537075384543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
-    <SUITE FILE_PATH="coverage/tools$Doctests_in_document.coverage" NAME="Doctests in document Coverage Results" MODIFIED="1537075237389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
+    <SUITE FILE_PATH="coverage/tools$Doctests_in_document.coverage" NAME="Doctests in document Coverage Results" MODIFIED="1537075453710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
     <SUITE FILE_PATH="coverage/tools$Unittests_in_groks_py.coverage" NAME="Unittests in groks.py Coverage Results" MODIFIED="1536829176122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/test/spike" />
     <SUITE FILE_PATH="coverage/tools$Doctest__parse_prefix.coverage" NAME="Doctest _parse_prefix Coverage Results" MODIFIED="1537066333967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
     <SUITE FILE_PATH="coverage/tools$Doctest_parse.coverage" NAME="Doctest parse Coverage Results" MODIFIED="1537072490883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/config" />
@@ -407,45 +407,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Doctest parse (3)">
-    <configuration name="Doctest parse (1)" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <module name="tools" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project_merger/config" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_merger/config/bit_element.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="parse" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_FUNCTION" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Doctest parse (2)" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <module name="tools" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project_merger/config" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_merger/config/option_element.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="parse" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_FUNCTION" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Doctests in string_element">
     <configuration name="Doctest parse (3)" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <module name="tools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -484,6 +446,25 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Doctests in common" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <module name="tools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project_merger/config" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_merger/config/common.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="Doctests in document" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <module name="tools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -503,20 +484,39 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Doctests in string_element" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <module name="tools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project_merger/config" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_merger/config/string_element.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python tests.Doctest parse (1)" />
       <item itemvalue="Python tests.Doctests in bit_element" />
       <item itemvalue="Python tests.Doctests in document" />
-      <item itemvalue="Python tests.Doctest parse (2)" />
       <item itemvalue="Python tests.Doctest parse (3)" />
+      <item itemvalue="Python tests.Doctests in common" />
+      <item itemvalue="Python tests.Doctests in string_element" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Doctest parse (3)" />
-        <item itemvalue="Python tests.Doctest parse (2)" />
-        <item itemvalue="Python tests.Doctests in document" />
+        <item itemvalue="Python tests.Doctests in string_element" />
+        <item itemvalue="Python tests.Doctests in common" />
         <item itemvalue="Python tests.Doctests in bit_element" />
-        <item itemvalue="Python tests.Doctest parse (1)" />
+        <item itemvalue="Python tests.Doctests in document" />
+        <item itemvalue="Python tests.Doctest parse (3)" />
       </list>
     </recent_temporary>
   </component>
