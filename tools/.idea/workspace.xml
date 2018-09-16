@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90dd0665-3f64-4913-acd7-358280449964" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project_merger/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project_merger/config_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project_merger/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project_merger/spike/example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project_merger/test/spike/TestStringMethods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project_merger/test/spike/groks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project_merger/test/spike/ui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../poll/_build/nrf52840_xxaa.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../poll/_build/nrf52840_xxaa.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../readme.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../readme.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../setup.source" beforeDir="false" afterPath="$PROJECT_DIR$/../setup.source" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_merger/config_compiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_merger/config_compiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_merger/config_compiler_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_merger/config_compiler_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,144 +13,188 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/tools$Unittests_in_groks_py.coverage" NAME="Unittests in groks.py Coverage Results" MODIFIED="1536829176122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/test/spike" />
+    <SUITE FILE_PATH="coverage/tools$Doctest__parse_option_element.coverage" NAME="Doctest _parse_option_element Coverage Results" MODIFIED="1537055702479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest__parse_options.coverage" NAME="Doctest _parse_options Coverage Results" MODIFIED="1537054335560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
     <SUITE FILE_PATH="coverage/tools$ui.coverage" NAME="ui Coverage Results" MODIFIED="1536844297063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/test/spike" />
+    <SUITE FILE_PATH="coverage/tools$Doctest__parse_element_header.coverage" NAME="Doctest _parse_element_header Coverage Results" MODIFIED="1537053305109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest_skip_blanks.coverage" NAME="Doctest skip_blanks Coverage Results" MODIFIED="1537030949068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest__parse_bit_element.coverage" NAME="Doctest _parse_bit_element Coverage Results" MODIFIED="1537055404996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
     <SUITE FILE_PATH="coverage/tools$Unittests_in_TestStringMethods_py.coverage" NAME="Unittests for project_merger.test.spike.TestStringMethods Coverage Results" MODIFIED="1536825503296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/test/spike" />
-    <SUITE FILE_PATH="coverage/tools$tree_test.coverage" NAME="tree_test Coverage Results" MODIFIED="1536914126952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest_SimpleElement_parse.coverage" NAME="Doctest SimpleElement.parse Coverage Results" MODIFIED="1537027083488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest_parse_simple_element.coverage" NAME="Doctest parse_simple_element Coverage Results" MODIFIED="1537041493348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Unittests_for_config_compiler_test_config_compiler_test_test_compiles_block_comment_and_body.coverage" NAME="Unittests for config_compiler_test.config_compiler_test.test_compiles_block_comment_and_body Coverage Results" MODIFIED="1536955494847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest__parse_header_comment.coverage" NAME="Doctest _parse_header_comment Coverage Results" MODIFIED="1537051857979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctests_in_config_compiler.coverage" NAME="Doctests in config_compiler Coverage Results" MODIFIED="1536985149016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest__parse_macro_definition.coverage" NAME="Doctest _parse_macro_definition Coverage Results" MODIFIED="1537055036092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest_parse_suffix.coverage" NAME="Doctest parse_suffix Coverage Results" MODIFIED="1537031224109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
     <SUITE FILE_PATH="coverage/tools$Doctests_in_example.coverage" NAME="Doctests in example Coverage Results" MODIFIED="1536825734447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/src/spike" />
+    <SUITE FILE_PATH="coverage/tools$Unittests_in_config_compiler_test_py.coverage" NAME="Unittests in config_compiler_test.py Coverage Results" MODIFIED="1536954101248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest__parse_string_element.coverage" NAME="Doctest _parse_string_element Coverage Results" MODIFIED="1537055304212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest_parse_info.coverage" NAME="Doctest parse_info Coverage Results" MODIFIED="1537053468290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest_parse_header_comment.coverage" NAME="Doctest parse_header_comment Coverage Results" MODIFIED="1537029631288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest__parse_blanks.coverage" NAME="Doctest _parse_blanks Coverage Results" MODIFIED="1537052459882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$tree_test.coverage" NAME="tree_test Coverage Results" MODIFIED="1536960244422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest__parse_suffix.coverage" NAME="Doctest _parse_suffix Coverage Results" MODIFIED="1537052114197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest_parse_prefix.coverage" NAME="Doctest parse_prefix Coverage Results" MODIFIED="1537030817647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Unittests_in_groks_py.coverage" NAME="Unittests in groks.py Coverage Results" MODIFIED="1536829176122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger/test/spike" />
+    <SUITE FILE_PATH="coverage/tools$Doctest__parse_prefix.coverage" NAME="Doctest _parse_prefix Coverage Results" MODIFIED="1537052538087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Doctest_parse.coverage" NAME="Doctest parse Coverage Results" MODIFIED="1537056276495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
+    <SUITE FILE_PATH="coverage/tools$Unittests_for_config_compiler_test_config_compiler_test.coverage" NAME="Unittests for config_compiler_test.config_compiler_test Coverage Results" MODIFIED="1536953844441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project_merger" />
     <SUITE FILE_PATH="coverage/tools$_pydev_execfile.coverage" NAME="_pydev_execfile Coverage Results" MODIFIED="1536910757823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="64979018">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="h" value="2" />
-          <entry key="py" value="12" />
+          <entry key="h" value="4" />
+          <entry key="py" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C++" value="2" />
-          <entry key="Python" value="12" />
+          <entry key="C++" value="4" />
+          <entry key="Python" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="64" />
-          <entry key="h" value="895" />
-          <entry key="py" value="13568" />
+          <entry key="dummy" value="84" />
+          <entry key="h" value="1148" />
+          <entry key="py" value="39246" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C++" value="895" />
-          <entry key="PLAIN_TEXT" value="64" />
-          <entry key="Python" value="13568" />
+          <entry key="C++" value="1148" />
+          <entry key="PLAIN_TEXT" value="84" />
+          <entry key="Python" value="39246" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/project_merger/config_test.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="446">
-                  <caret line="176" lean-forward="true" selection-start-line="176" selection-end-line="176" />
-                  <folding>
-                    <element signature="e#0#15#0" expanded="true" />
-                    <marker date="1536913968346" expanded="true" signature="69:1733" ph="..." />
-                    <marker date="1536913968346" expanded="true" signature="679:683" ph="..." />
-                    <marker date="1536913968346" expanded="true" signature="755:1033" ph="..." />
-                    <marker date="1536913968346" expanded="true" signature="3774:4026" ph="..." />
-                    <marker date="1536913968346" expanded="true" signature="4710:4860" ph="..." />
-                    <marker date="1536913968346" expanded="true" signature="4900:4909" ph="..." />
-                    <marker date="1536913968346" expanded="true" signature="5073:5075" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/project_merger/test/spike/ui.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/project_merger/main.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" selection-start-line="10" selection-end-line="10" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/project_merger/test/spike/TestStringMethods.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="41" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="41" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/project_merger/test/spike/groks.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/etc/versions/nRF5_SDK_for_Thread_and_Zigbee_v1.0.0/config/nrf52840/config/sdk_config.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="2895" column="51" selection-start-line="2895" selection-start-column="51" selection-end-line="2895" selection-end-column="51" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/project_merger/config.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="491">
-                  <caret line="166" column="10" selection-start-line="166" selection-start-column="10" selection-end-line="166" selection-end-column="10" />
-                  <folding>
-                    <element signature="e#0#21#0" expanded="true" />
-                    <marker date="1536914126941" expanded="true" signature="502:1300" ph="..." />
-                    <marker date="1536914126941" expanded="true" signature="2067:2245" ph="..." />
-                    <marker date="1536914126941" expanded="true" signature="2827:3048" ph="..." />
-                    <marker date="1536914126941" expanded="true" signature="3091:3096" ph="..." />
-                    <marker date="1536914126941" expanded="true" signature="4391:4548" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project_merger/config_parser_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-444">
+              <caret line="26" column="39" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="26" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project_merger/config_parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+                <marker date="1536960130397" expanded="true" signature="175:191" ph="..." />
+                <marker date="1536960130397" expanded="true" signature="588:619" ph="..." />
+                <marker date="1536960130397" expanded="true" signature="646:1444" ph="..." />
+                <marker date="1536960130397" expanded="true" signature="2225:2390" ph="..." />
+                <marker date="1536960130397" expanded="true" signature="2943:3151" ph="..." />
+                <marker date="1536960130397" expanded="true" signature="3194:3199" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project_merger/config_compiler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+                <marker date="1537056276486" expanded="true" signature="772:840" ph="..." />
+                <marker date="1537056276486" expanded="true" signature="6740:7699" ph="..." />
+                <marker date="1537056276486" expanded="true" signature="8151:8751" ph="..." />
+                <marker date="1537056276486" expanded="true" signature="8790:8795" ph="..." />
+                <marker date="1537056276486" expanded="true" signature="8790:10319" ph="..." />
+                <marker date="1537056276486" expanded="true" signature="10346:10351" ph="..." />
+                <marker date="1537056276486" expanded="true" signature="10346:11223" ph="..." />
+                <marker date="1537056276486" expanded="true" signature="11571:11682" ph="..." />
+                <marker date="1537056276486" expanded="true" signature="12261:12542" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/docrunner.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="323" selection-start-line="323" selection-end-line="323" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project_merger/test/spike/TestStringMethods.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="41" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project_merger/sdk_config.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="12107" column="7" lean-forward="true" selection-start-line="12107" selection-start-column="7" selection-end-line="12107" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project_merger/test/spike/ui.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project_merger/test/spike/groks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -168,6 +202,44 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>end of con</find>
+      <find>CONFIG_SE</find>
+      <find>STRUCTURE_BEGIN</find>
+      <find>STRUCTURE_END</find>
+      <find>APP_CONFIG</find>
+      <find>NAMED_V</find>
+      <find>NAMED_VALUE</find>
+      <find>MACRO_D</find>
+      <find>config_parser.</find>
+      <find>&lt;i&gt;</find>
+      <find>&lt;o&gt;</find>
+      <find>NRF_QSPI_PIN_NOT_CONNECTED</find>
+      <find>&lt;q&gt;</find>
+      <find>&gt;&gt;&gt;</find>
+      <find>&lt;s&gt;</find>
+      <find>&quot;</find>
+      <find>&lt;0</find>
+      <find>parse_option</find>
+      <find>parse_ma</find>
+      <find>parse</find>
+      <find>&lt;e&gt;</find>
+      <find>skip_blanke</find>
+      <find>_parse_blanks(d</find>
+      <find>_parse_blanks(doc, i)</find>
+      <find>HeaderBlock</find>
+      <find>&lt;h&gt;</find>
+      <find>parse_bl</find>
+      <find>doc, i</find>
+      <find>suffix</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>'</replace>
+      <replace>...</replace>
+      <replace>_parse_blanks(i, doc)</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -185,8 +257,13 @@
         <option value="$PROJECT_DIR$/project_merger/test/spike/ui.py" />
         <option value="$PROJECT_DIR$/project_merger/tree_test.py" />
         <option value="$PROJECT_DIR$/../poll/sdk_config.h" />
-        <option value="$PROJECT_DIR$/project_merger/config_test.py" />
         <option value="$PROJECT_DIR$/project_merger/config.py" />
+        <option value="$PROJECT_DIR$/project_merger/config_test.py" />
+        <option value="$PROJECT_DIR$/project_merger/config_compiler_test.py" />
+        <option value="$PROJECT_DIR$/project_merger/config_parser.py" />
+        <option value="$PROJECT_DIR$/project_merger/config_parser_test.py" />
+        <option value="$PROJECT_DIR$/project_merger/sdk_config.h" />
+        <option value="$PROJECT_DIR$/project_merger/config_compiler.py" />
       </list>
     </option>
   </component>
@@ -224,6 +301,12 @@
               <item name="tools" type="b2602c69:ProjectViewProjectNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
               <item name="project_merger" type="462c0819:PsiDirectoryNode" />
+              <item name="spike" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="project_merger" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -247,7 +330,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -269,121 +352,116 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tree_test">
-    <configuration name="_pydev_execfile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.Doctest parse">
+    <configuration name="Doctest _parse_bit_element" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <module name="tools" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tree_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tools" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project_merger" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_merger/config_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ui" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tools" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project_merger/test/spike" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_merger/test/spike/ui.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Doctests in example" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <module name="tools" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project_merger/spike" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_merger/src/spike/example.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_merger/config_compiler.py" />
       <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
+      <option name="METHOD_NAME" value="_parse_bit_element" />
       <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="TEST_TYPE" value="TEST_FUNCTION" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in groks.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Doctest _parse_macro_definition" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <module name="tools" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project_merger/test/spike" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project_merger" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/project_merger/test/spike/groks.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_merger/config_compiler.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="_parse_macro_definition" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_FUNCTION" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Doctest _parse_option_element" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <module name="tools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project_merger" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_merger/config_compiler.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="_parse_option_element" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_FUNCTION" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Doctest _parse_string_element" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <module name="tools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project_merger" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_merger/config_compiler.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="_parse_string_element" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_FUNCTION" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Doctest parse" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <module name="tools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project_merger" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_merger/config_compiler.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="parse" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_FUNCTION" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Doctests in example" />
-      <item itemvalue="Python.tree_test" />
-      <item itemvalue="Python tests.Unittests in groks.py" />
-      <item itemvalue="Python.ui" />
-      <item itemvalue="Python._pydev_execfile" />
+      <item itemvalue="Python tests.Doctest _parse_macro_definition" />
+      <item itemvalue="Python tests.Doctest parse" />
+      <item itemvalue="Python tests.Doctest _parse_string_element" />
+      <item itemvalue="Python tests.Doctest _parse_bit_element" />
+      <item itemvalue="Python tests.Doctest _parse_option_element" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tree_test" />
-        <item itemvalue="Python._pydev_execfile" />
-        <item itemvalue="Python.ui" />
-        <item itemvalue="Python tests.Unittests in groks.py" />
-        <item itemvalue="Python tests.Doctests in example" />
+        <item itemvalue="Python tests.Doctest parse" />
+        <item itemvalue="Python tests.Doctest _parse_option_element" />
+        <item itemvalue="Python tests.Doctest _parse_bit_element" />
+        <item itemvalue="Python tests.Doctest _parse_string_element" />
+        <item itemvalue="Python tests.Doctest _parse_macro_definition" />
       </list>
     </recent_temporary>
   </component>
@@ -401,47 +479,47 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_TestStringMethods_py - 2018.09.13 at 03h 53m 29s.xml">
-      <configuration name="Unittests in TestStringMethods.py" configurationId="tests" />
+    <history-entry file="Doctest_parse - 2018.09.15 at 19h 56m 56s.xml">
+      <configuration name="Doctest parse" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_example - 2018.09.13 at 03h 55m 45s.xml">
-      <configuration name="Doctests in example" configurationId="tests" />
+    <history-entry file="Doctest_parse - 2018.09.15 at 19h 59m 48s.xml">
+      <configuration name="Doctest parse" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_example - 2018.09.13 at 03h 56m 03s.xml">
-      <configuration name="Doctests in example" configurationId="tests" />
+    <history-entry file="Doctest_parse - 2018.09.15 at 20h 01m 41s.xml">
+      <configuration name="Doctest parse" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_example - 2018.09.13 at 03h 56m 08s.xml">
-      <configuration name="Doctests in example" configurationId="tests" />
+    <history-entry file="Doctest_parse - 2018.09.15 at 20h 03m 13s.xml">
+      <configuration name="Doctest parse" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_project_merger_test_spike_TestStringMethods - 2018.09.13 at 03h 58m 23s.xml">
-      <configuration name="Unittests for project_merger.test.spike.TestStringMethods" configurationId="tests" />
+    <history-entry file="Doctest_parse - 2018.09.15 at 20h 03m 15s.xml">
+      <configuration name="Doctest parse" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_example - 2018.09.13 at 04h 02m 07s.xml">
-      <configuration name="Doctests in example" configurationId="tests" />
+    <history-entry file="Doctest_parse - 2018.09.15 at 20h 03m 50s.xml">
+      <configuration name="Doctest parse" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_example - 2018.09.13 at 04h 02m 14s.xml">
-      <configuration name="Doctests in example" configurationId="tests" />
+    <history-entry file="Doctest_parse - 2018.09.15 at 20h 04m 06s.xml">
+      <configuration name="Doctest parse" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_groks_py - 2018.09.13 at 04h 58m 49s.xml">
-      <configuration name="Unittests in groks.py" configurationId="tests" />
+    <history-entry file="Doctest_parse - 2018.09.15 at 20h 04m 18s.xml">
+      <configuration name="Doctest parse" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_groks_py - 2018.09.13 at 04h 59m 14s.xml">
-      <configuration name="Unittests in groks.py" configurationId="tests" />
+    <history-entry file="Doctest_parse - 2018.09.15 at 20h 04m 31s.xml">
+      <configuration name="Doctest parse" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_groks_py - 2018.09.13 at 04h 59m 36s.xml">
-      <configuration name="Unittests in groks.py" configurationId="tests" />
+    <history-entry file="Doctest_parse - 2018.09.15 at 20h 04m 36s.xml">
+      <configuration name="Doctest parse" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2614458" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3566265" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -458,6 +536,29 @@
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38795182" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -469,14 +570,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/project_merger/config_test.py</url>
-          <line>174</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/project_merger/config_parser.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/project_merger/config.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/project_merger/config_parser.py</url>
+          <line>72</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project_merger/config_compiler.py</url>
+          <line>191</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project_merger/config_compiler.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -484,12 +595,47 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>text[0:2]</expression-string>
+        <expression-string>doc[3]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>text[2:]</expression-string>
+        <expression-string>doc[2]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>doc[1]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>doc[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(doc)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>doc[i]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>next(i for i, x in enumerate(text) if x.strip() == &quot;*/&quot;)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>next(i for i, x in enumerate(text) if x.strip() is &quot;*/&quot;)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(i for i, x in enumerate(text) if x.strip() is &quot;*/&quot;)[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -503,38 +649,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_merger/test/spike/ui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project_merger/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project_merger/test/spike/TestStringMethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/enum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="345" selection-start-line="345" selection-end-line="345" />
         </state>
       </provider>
     </entry>
@@ -545,6 +663,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15465">
+          <caret line="1044" selection-start-line="1044" selection-end-line="1044" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_merger/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/etc/versions/nRF5_SDK_for_Thread_and_Zigbee_v1.0.0/config/nrf52840/config/sdk_config.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43425">
+          <caret line="2895" column="51" selection-start-line="2895" selection-start-column="51" selection-end-line="2895" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/enum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="345" selection-start-line="345" selection-end-line="345" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_merger/config_compiler_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1536955494837" expanded="true" signature="303:305" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project_merger/test/spike/groks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -552,41 +709,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/etc/versions/nRF5_SDK_for_Thread_and_Zigbee_v1.0.0/config/nrf52840/config/sdk_config.h">
+    <entry file="file://$PROJECT_DIR$/project_merger/test/spike/TestStringMethods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="2895" column="51" selection-start-line="2895" selection-start-column="51" selection-end-line="2895" selection-end-column="51" />
+        <state relative-caret-position="45">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_merger/config.py">
+    <entry file="file://$PROJECT_DIR$/project_merger/config_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="166" column="10" selection-start-line="166" selection-start-column="10" selection-end-line="166" selection-end-column="10" />
+        <state relative-caret-position="253">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-            <marker date="1536914126941" expanded="true" signature="502:1300" ph="..." />
-            <marker date="1536914126941" expanded="true" signature="2067:2245" ph="..." />
-            <marker date="1536914126941" expanded="true" signature="2827:3048" ph="..." />
-            <marker date="1536914126941" expanded="true" signature="3091:3096" ph="..." />
-            <marker date="1536914126941" expanded="true" signature="4391:4548" ph="..." />
+            <marker date="1536960130397" expanded="true" signature="175:191" ph="..." />
+            <marker date="1536960130397" expanded="true" signature="588:619" ph="..." />
+            <marker date="1536960130397" expanded="true" signature="646:1444" ph="..." />
+            <marker date="1536960130397" expanded="true" signature="2225:2390" ph="..." />
+            <marker date="1536960130397" expanded="true" signature="2943:3151" ph="..." />
+            <marker date="1536960130397" expanded="true" signature="3194:3199" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_merger/config_test.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/docrunner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="176" lean-forward="true" selection-start-line="176" selection-end-line="176" />
+        <state relative-caret-position="158">
+          <caret line="323" selection-start-line="323" selection-end-line="323" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_merger/config_parser_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-444">
+          <caret line="26" column="39" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="26" selection-end-column="39" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1536913968346" expanded="true" signature="69:1733" ph="..." />
-            <marker date="1536913968346" expanded="true" signature="679:683" ph="..." />
-            <marker date="1536913968346" expanded="true" signature="755:1033" ph="..." />
-            <marker date="1536913968346" expanded="true" signature="3774:4026" ph="..." />
-            <marker date="1536913968346" expanded="true" signature="4710:4860" ph="..." />
-            <marker date="1536913968346" expanded="true" signature="4900:4909" ph="..." />
-            <marker date="1536913968346" expanded="true" signature="5073:5075" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_merger/test/spike/ui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_merger/sdk_config.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="12107" column="7" lean-forward="true" selection-start-line="12107" selection-start-column="7" selection-end-line="12107" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_merger/config_compiler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1537056276486" expanded="true" signature="772:840" ph="..." />
+            <marker date="1537056276486" expanded="true" signature="6740:7699" ph="..." />
+            <marker date="1537056276486" expanded="true" signature="8151:8751" ph="..." />
+            <marker date="1537056276486" expanded="true" signature="8790:8795" ph="..." />
+            <marker date="1537056276486" expanded="true" signature="8790:10319" ph="..." />
+            <marker date="1537056276486" expanded="true" signature="10346:10351" ph="..." />
+            <marker date="1537056276486" expanded="true" signature="10346:11223" ph="..." />
+            <marker date="1537056276486" expanded="true" signature="11571:11682" ph="..." />
+            <marker date="1537056276486" expanded="true" signature="12261:12542" ph="..." />
           </folding>
         </state>
       </provider>
