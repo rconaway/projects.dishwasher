@@ -1,105 +1,176 @@
-
 from typing import List
 from typing import NamedTuple
 import re
 
-def parse(doc):
-    """Parse
-        - sanity check
-        >>> with open("sdk_config.h") as f:
-        ...     text = [line.rstrip() for line in f]
-        ...     x = parse(text)
-        ...
-    """
-    (i, comment) = _parse_header_comment(0, doc)
-    (i, guard) = _parse_prefix(i, doc)
-
-    body = []
-
-    while True:
-        elt = _optional(lambda: _parse_header_block(i, doc))
-
-        if elt:
-            body.append(elt[1])
-            i = elt[0]
-        else:
-            break
-
-    i = _parse_suffix(i, doc)
-    _parse_blanks(i, doc)
-
-    if (i < len(doc)):
-        raise ParseFailure(i, "Unexpected content after end of document")
-
-    return comment, guard, body
 
 
-class HeaderBlock(NamedTuple):
-    name: str
-    description: str
-    infos: List
-    body: List
-
-def _parse_header_block(i, doc):
-    (i, name, description, infos) = _parse_element_header(i, doc, "h")
-    body = []
-
-    while True:
-        elt = \
-            _optional(lambda: _parse_header_block(i, doc)) or \
-            _optional(lambda: _parse_enable_block(i, doc)) or \
-            _optional(lambda: _parse_string_element(i, doc)) or \
-            _optional(lambda: _parse_bit_element(i, doc)) or \
-            _optional(lambda: _parse_option_element(i, doc))
-
-        if elt:
-            body.append(elt[1])
-            i = elt[0]
-        else:
-            break
-
-    i = _parse_blanks(i, doc)
-    if (doc[i] != "// </h>"):
-        raise ParseFailure(i, "expected // </h>")
-    i += 1
-
-    return i, HeaderBlock(name, description, infos, body)
-
-
-class EnableBlock(NamedTuple):
+class EnableElement(NamedTuple):
     name: str
     description: str
     value: str
     infos: List
     body: List
 
-def _parse_enable_block(i, doc):
-    (i, name, description, infos) = _parse_element_header(i, doc, "e")
-    (i, value, minfos) = _parse_macro_definition(i, doc, name)
+    @staticmethod
+    def parse(i, doc):
+        (i, name, description, infos) = _parse_element_header(i, doc, "e")
+        (i, value, minfos) = _parse_macro_definition(i, doc, name)
 
+        body = []
+
+        while True:
+            elt = \
+                _optional(lambda: HeaderElement.parse(i, doc)) or \
+                _optional(lambda: EnableElement.parse(i, doc)) or \
+                _optional(lambda: StringElement.parse(i, doc)) or \
+                _optional(lambda: BitElement.parse(i, doc)) or \
+                _optional(lambda: OptionElement.parse(i, doc))
+
+            if elt:
+                body.append(elt[1])
+                i = elt[0]
+            else:
+                break
+
+        i = _parse_blanks(i, doc)
+        if (doc[i] != "// </e>"):
+            raise ParseFailure(i, "expected // </e>")
+
+        i+= 1
+
+        return i, EnableElement(name, description, value, infos + minfos, body)
+
+
+class StringElement(NamedTuple):
+    name: str
+    description: str
+    value: str
+    infos: List
+
+    @staticmethod
+    def parse(i, doc):
+        """
+        >>> _parse_string_element(0, [
+        ...     "// <i> some info",
+        ...     "",
+        ...     "// <s> FOO the description",
+        ...     "// <i> more info",
+        ...     "#ifndef FOO",
+        ...     "#define FOO BAZOO",
+        ...     "#endif",
+        ... ])
+        (7, StringElement(name='FOO', description='the description', value='BAZOO', infos=['some info', 'more info']))
+        """
+
+        i, name, description, infos = _parse_element_header(i, doc, "s")
+        i, value, minfos = _parse_macro_definition(i, doc, name)
+        infos += minfos
+
+        return i, StringElement(name, description, value, infos)
+
+class OptionElement(NamedTuple):
+    name: str
+    description: str
+    value: str
+    options: List
+    infos: List
+    option_infos: List
+    macro_infos: List
+
+    def parse(i, doc):
+        """
+        >>> _parse_option_element(0, [
+        ...     "// <i> some info",
+        ...     "",
+        ...     "// <o> FOO the description",
+        ...     "// <i> more info",
+        ...     "// <0=> zero",
+        ...     "// <1=> the one",
+        ...     "// <2=> two",
+        ...     "// <i> even more",
+        ...     "#ifndef FOO",
+        ...     "#define FOO 1",
+        ...     "#endif",
+        ...     ""
+        ... ])
+        (11, OptionElement(name='FOO', description='the description', value='1', options=[('0', 'zero'), ('1', 'the one'), ('2', 'two')], infos=['some info'], option_infos=['more info'], macro_infos=['even more']))
+        """
+        assert isinstance(i, int)
+        assert isinstance(doc, list)
+
+        i, name, description, infos = _parse_element_header(i, doc, "o")
+        i, options, option_infos = _parse_options(i, doc)
+        i, value, macro_infos = _parse_macro_definition(i, doc, name)
+
+        return i, OptionElement(name, description, value, options, infos, option_infos, macro_infos)
+
+
+class BitElement(NamedTuple):
+    name: str
+    description: str
+    value: str
+    infos: List
+
+    def parse(i, doc):
+        """
+        >>> _parse_bit_element(0, [
+        ...     "// <i> some info",
+        ...     "",
+        ...     "// <q> FOO the description",
+        ...     "// <i> more info",
+        ...     "#ifndef FOO",
+        ...     "#define FOO 1",
+        ...     "#endif",
+        ... ])
+        (7, BitElement(name='FOO', description='the description', value='1', infos=['some info', 'more info']))
+        """
+
+        i, name, description, infos = _parse_element_header(i, doc, "q")
+        i, value, minfos = _parse_macro_definition(i, doc, name)
+        infos += minfos
+
+        return i, BitElement(name, description, value, infos)
+
+
+class Document(NamedTuple):
+    comment: str
+    guard: str
+    body: List
+
+    @staticmethod
+    def parse(doc):
+        """Parse document
+            - sanity check
+            >>> with open("sdk_config.h") as f:
+            ...     text = [line.rstrip() for line in f]
+            ...     x = Document.parse(text)
+            ...
+        """
+
+        i, comment = _parse_header_comment(0, doc)
+        i, guard = _parse_prefix(i, doc)
+        i, body = _parse_main_body(i, doc)
+        i = _parse_suffix(i, doc)
+        _parse_blanks(i, doc)
+
+        if (i < len(doc)):
+            raise ParseFailure(i, "Unexpected content after end of document")
+
+        return Document(comment, guard, body)
+
+
+def _parse_main_body(i, doc):
     body = []
 
     while True:
-        elt = \
-            _optional(lambda: _parse_header_block(i, doc)) or \
-            _optional(lambda: _parse_enable_block(i, doc)) or \
-            _optional(lambda: _parse_string_element(i, doc)) or \
-            _optional(lambda: _parse_bit_element(i, doc)) or \
-            _optional(lambda: _parse_option_element(i, doc))
+        elt = _optional(lambda: HeaderElement.parse(i, doc))
 
         if elt:
             body.append(elt[1])
             i = elt[0]
         else:
             break
-
-    i = _parse_blanks(i, doc)
-    if (doc[i] != "// </e>"):
-        raise ParseFailure(i, "expected // </e>")
-
-    i+= 1
-
-    return i, EnableBlock(name, description, value, infos + minfos, body)
+    return i, body
 
 
 def _parse_header_comment(i, doc):
@@ -141,40 +212,27 @@ def _parse_prefix(i, doc):
     assert isinstance(i, int)
     assert isinstance(doc, List)
 
-    i = _parse_blanks(i, doc)
-
-    p = re.compile("#ifndef (\S+)$")
-    m = p.match(doc[i])
-    if not m:
-        raise ParseFailure(i, "Expected #ifndef guard")
-    guard_macro = m.group(1)
-    i = _parse_blanks(i + 1, doc)
-
-    p = re.compile("#define (\S+)$")
-    m = p.match(doc[i])
-    if not m:
-        raise ParseFailure(i, "Expected #define guard")
-    if guard_macro != m.group(1):
-        raise ParseFailure(i, f"guard macro mismatch: {guard_macro} / {m.group(1)}")
-    i = _parse_blanks(i + 1, doc)
-
-    if not "<<< Use Configuration Wizard in Context Menu >>>" in doc[i]:
-        raise ParseFailure(i, "Expected <<< Use Configuration Wizard in Context Menu >>>")
-    i = _parse_blanks(i + 1, doc)
-
-    if doc[i] != "#ifdef USE_APP_CONFIG":
-        raise ParseFailure(i, "Expected #ifdef USE_APP_CONFIG")
-    i = _parse_blanks(i + 1, doc)
-
-    if doc[i] != '#include "app_config.h"':
-        raise ParseFailure(i, 'Expected #include "app_config.h"')
-    i = _parse_blanks(i + 1, doc)
-
-    if doc[i] != "#endif":
-        raise ParseFailure(i, "Expected #endif")
-    i = _parse_blanks(i + 1, doc)
+    i, guard_macro = _parse_pattern(i, doc, "#ifndef (\S+)$")
+    i, define_macro = _parse_pattern(i, doc, "#define (\S+)$")
+    if guard_macro != define_macro:
+        raise ParseFailure(i, f"guard macro mismatch: {guard_macro} / {define_macro}")
+    i, = _parse_pattern(i, doc, "// <<< Use Configuration Wizard in Context Menu >>>")
+    i, = _parse_pattern(i, doc, "#ifdef USE_APP_CONFIG")
+    i, = _parse_pattern(i, doc, '#include "app_config.h"')
+    i, = _parse_pattern(i, doc, "#endif")
 
     return i, guard_macro
+
+
+def _parse_pattern(i, doc, pattern):
+    i = _parse_blanks(i, doc)
+
+    p = re.compile(pattern)
+    m = p.match(doc[i])
+    if not m:
+        raise ParseFailure(i, f"Expected {pattern}")
+
+    return (i+1,) + m.groups()
 
 
 def _parse_suffix(i, doc):
@@ -199,98 +257,6 @@ def _parse_suffix(i, doc):
         raise ParseFailure(i, "Expected #endif")
 
     return _parse_blanks(i + 1, doc)
-
-
-class StringElement(NamedTuple):
-    name: str
-    description: str
-    value: str
-    infos: List
-
-def _parse_string_element(i, doc):
-    """
-    >>> _parse_string_element(0, [
-    ...     "// <i> some info",
-    ...     "",
-    ...     "// <s> FOO the description",
-    ...     "// <i> more info",
-    ...     "#ifndef FOO",
-    ...     "#define FOO BAZOO",
-    ...     "#endif",
-    ... ])
-    (7, StringElement(name='FOO', description='the description', value='BAZOO', infos=['some info', 'more info']))
-    """
-
-    i, name, description, infos = _parse_element_header(i, doc, "s")
-    i, value, minfos = _parse_macro_definition(i, doc, name)
-    infos += minfos
-
-    return i, StringElement(name, description, value, infos)
-
-
-class BitElement(NamedTuple):
-    name: str
-    description: str
-    value: str
-    infos: List
-
-def _parse_bit_element(i, doc):
-    """
-    >>> _parse_bit_element(0, [
-    ...     "// <i> some info",
-    ...     "",
-    ...     "// <q> FOO the description",
-    ...     "// <i> more info",
-    ...     "#ifndef FOO",
-    ...     "#define FOO 1",
-    ...     "#endif",
-    ... ])
-    (7, BitElement(name='FOO', description='the description', value='1', infos=['some info', 'more info']))
-    """
-
-    i, name, description, infos = _parse_element_header(i, doc, "q")
-    i, value, minfos = _parse_macro_definition(i, doc, name)
-    infos += minfos
-
-    return i, BitElement(name, description, value, infos)
-
-
-class OptionElement(NamedTuple):
-    name: str
-    description: str
-    value: str
-    options: List
-    infos: List
-    option_infos: List
-    macro_infos: List
-
-def _parse_option_element(i, doc):
-    """
-    >>> _parse_option_element(0, [
-    ...     "// <i> some info",
-    ...     "",
-    ...     "// <o> FOO the description",
-    ...     "// <i> more info",
-    ...     "// <0=> zero",
-    ...     "// <1=> the one",
-    ...     "// <2=> two",
-    ...     "// <i> even more",
-    ...     "#ifndef FOO",
-    ...     "#define FOO 1",
-    ...     "#endif",
-    ...     ""
-    ... ])
-    (11, OptionElement(name='FOO', description='the description', value='1', options=[('0', 'zero'), ('1', 'the one'), ('2', 'two')], infos=['some info'], option_infos=['more info'], macro_infos=['even more']))
-    """
-    assert isinstance(i, int)
-    assert isinstance(doc, list)
-
-    i, name, description, infos = _parse_element_header(i, doc, "o")
-    i, options, option_infos = _parse_options(i, doc)
-    i, value, macro_infos = _parse_macro_definition(i, doc, name)
-
-    return i, OptionElement(name, description, value, options, infos, option_infos, macro_infos)
-
 
 
 def _parse_macro_definition(i, doc, name):
