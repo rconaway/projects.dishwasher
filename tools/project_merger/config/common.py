@@ -46,6 +46,14 @@ def parse_macro_definition(i: int, doc: List[str], name: str) -> Tuple:
     return i, value, infos
 
 
+def dump_macro_definition(name, value):
+    return [
+        f"#ifndef {name}",
+        f"#define {name} {value}",
+        f"#endif"
+    ]
+
+
 def parse_element_header(i: int, doc: List[str], tag: str) -> Tuple:
     """Parse element header, absorbing info lines before the header
 
@@ -87,14 +95,12 @@ def parse_element_header(i: int, doc: List[str], tag: str) -> Tuple:
     i = parse_blanks(i, doc)
     i, infos = parse_info(i, doc)
 
-    p = re.compile("// <(\S)> (\S+)\s*(.*)$")
+    p = re.compile(f"// <{tag}> (\S+)(\s(.*))?$")
     m = p.match(doc[i])
     if not m:
         raise ParseFailure(i, "Not an element header")
-    if tag != m.group(1):
-        raise ParseFailure(i, f"Expected <{tag}> element")
 
-    (name, description) = (m.group(2), m.group(3))
+    (name, description) = (m.group(1), m.group(3) if m.group(3) else '')
     return i + 1, name, description, infos
 
 
@@ -195,6 +201,10 @@ def parse_info(i: int, doc: List[str]) -> Tuple:
         i += 1
 
 
+def dump_infos(infos):
+    return [f"// <i> {x}" for x in infos]
+
+
 def optional(action: Callable) -> Any:
     try:
         return action()
@@ -202,8 +212,37 @@ def optional(action: Callable) -> Any:
         return None
 
 
+def indent(block):
+    """
+    >>> indent(["alpha", "beta"])
+    ['    alpha', '    beta']
+    """
+
+    return ["    " + x for x in block]
+
+
+def flatten(x):
+    """
+    >>> flatten(["alpha", "beta"])
+    ['alpha', 'beta']
+
+    >>> flatten([["alpha", "beta"], ["gamma"]])
+    ['alpha', 'beta', 'gamma']
+    """
+
+    if isinstance(x, str):
+        return [x]
+
+    flattened = []
+    for e in x:
+        flattened += flatten(e)
+
+    return flattened
+
+
 class ParseFailure(Exception):
 
     def __init__(self, index, message):
         self.index = index
         self.message = message
+

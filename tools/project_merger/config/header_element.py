@@ -12,6 +12,14 @@ class HeaderElement(NamedTuple):
     infos: List
     body: List
 
+    def dump(self):
+        return dump_infos(self.infos) + \
+            ["",
+             f"// <h> {self.name} {self.description}",
+             "//=========================================================="] + \
+            indent(flatten([x.dump() for x in self.body])) + \
+            ["// </h>"]
+
 
 def parse(i, doc):
     (i, name, description, infos) = parse_element_header(i, doc, "h")
@@ -40,3 +48,5 @@ def _parse_body(i, doc):
             break
 
     return i, body
+
+

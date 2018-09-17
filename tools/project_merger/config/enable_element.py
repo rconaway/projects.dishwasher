@@ -13,6 +13,15 @@ class EnableElement(NamedTuple):
     infos: List
     body: List
 
+    def dump(self):
+        return dump_infos(self.infos) + \
+            ["",
+             f"// <e> {self.name} {self.description}",
+             "//=========================================================="] + \
+            dump_macro_definition(self.name, self.value) + \
+            indent(flatten([x.dump() for x in self.body])) + \
+            ["// </e>"]
+
 
 def parse(i, doc):
     i, name, description, infos = parse_element_header(i, doc, "e")

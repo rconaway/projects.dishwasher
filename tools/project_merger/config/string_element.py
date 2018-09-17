@@ -8,6 +8,11 @@ class StringElement(NamedTuple):
     value: str
     infos: List
 
+    def dump(self):
+        return [""] + dump_infos(self.infos) + \
+           [f"// <s> {self.name} {self.description}"] + \
+           dump_macro_definition(self.name, self.value)
+
 
 def parse(i, doc):
     """

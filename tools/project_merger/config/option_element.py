@@ -12,6 +12,15 @@ class OptionElement(NamedTuple):
     macro_infos: List
 
 
+    def dump(self):
+        return [""] + dump_infos(self.infos) + \
+            [f"// <o> {self.name} {self.description}"] + \
+            dump_infos(self.option_infos) + \
+            indent([f"// <{x[0]}=> {x[1]}" for x in self.options]) + \
+            dump_infos(self.macro_infos) + \
+            dump_macro_definition(self.name, self.value)
+
+
 def parse(i, doc):
     """
     >>> parse(0, [

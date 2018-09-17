@@ -8,6 +8,11 @@ class BitElement(NamedTuple):
     value: str
     infos: List[str]
 
+    def dump(self):
+        return [""] + dump_infos(self.infos) + \
+               [f"// <q> {self.name} {self.description}"] + \
+               dump_macro_definition(self.name, self.value)
+
 
 def parse(i: int, doc: List[str]):
     """
@@ -27,3 +32,4 @@ def parse(i: int, doc: List[str]):
     i, value, minfos = parse_macro_definition(i, doc, name)
 
     return i, BitElement(name, description, value, infos + minfos)
+
