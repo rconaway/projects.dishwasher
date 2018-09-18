@@ -1,6 +1,6 @@
 from config.common import *
 from typing import NamedTuple
-import config.header_element as header_element
+from config import header_element
 import io
 
 
@@ -160,5 +160,5 @@ def _parse_suffix(i, doc):
 def _dump_suffix(guard):
     return [
         "// <<< end of configuration section >>>",
-        "#endif //{guard}"
+        f"#endif //{guard}"
     ]

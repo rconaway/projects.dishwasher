@@ -1,9 +1,9 @@
 from config.common import *
 from typing import NamedTuple
-import config.header_element as header_element
-import config.bit_element as bit_element
-import config.string_element as string_element
-import config.option_element as option_element
+from config import header_element
+from config import bit_element as bit_element
+from config import string_element
+from config import option_element
 
 
 class EnableElement(NamedTuple):
