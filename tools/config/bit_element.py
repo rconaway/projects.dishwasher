@@ -13,6 +13,9 @@ class BitElement(NamedTuple):
                [f"// <q> {self.name} {self.description}"] + \
                dump_macro_definition(self.name, self.value)
 
+    def key_values(self):
+        return {self.name: self.value}
+
 
 def parse(i: int, doc: List[str]):
     """

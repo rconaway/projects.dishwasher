@@ -240,6 +240,15 @@ def flatten(x):
     return flattened
 
 
+def get_key_values_from_body(body):
+        kv = {}
+
+        for elt in body:
+            kv.update(elt.key_values())
+
+        return kv
+
+
 class ParseFailure(Exception):
 
     def __init__(self, index, message):

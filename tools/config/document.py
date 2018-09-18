@@ -15,6 +15,13 @@ class Document(NamedTuple):
             _dump_body(self.body) + \
             _dump_suffix(self.guard)
 
+    def print(self):
+        for line in self.dump():
+            print(line)
+
+    def key_values(self):
+        return get_key_values_from_body(self.body)
+
 
 def parse(doc):
     """Parse document
@@ -34,6 +41,12 @@ def parse(doc):
         raise ParseFailure(i, "Unexpected content after end of document")
 
     return Document(comment, guard, body)
+
+
+def parse_file(name):
+    f = open(name)
+    text = f.readlines()
+    return parse(text)
 
 
 def _parse_comment(i, doc):

@@ -13,6 +13,10 @@ class StringElement(NamedTuple):
            [f"// <s> {self.name} {self.description}"] + \
            dump_macro_definition(self.name, self.value)
 
+    def key_values(self):
+        return {self.name: self.value}
+
+
 
 def parse(i, doc):
     """

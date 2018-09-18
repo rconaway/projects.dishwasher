@@ -22,6 +22,10 @@ class EnableElement(NamedTuple):
             indent(flatten([x.dump() for x in self.body])) + \
             ["// </e>"]
 
+    def key_values(self):
+        return get_key_values_from_body(self.body)
+
+
 
 def parse(i, doc):
     i, name, description, infos = parse_element_header(i, doc, "e")
